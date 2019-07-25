@@ -1,12 +1,12 @@
 {
-  "name": "testPlugin",
-  "description": "my first plugin for Google Chrome",
+  "name": "OkGoogle",
   "version": "1.0",
   "manifest_version": 2,
+  "permissions": ["activeTab"],
   "content_scripts": [
     {
-      "matches": ["https://www.vl.ru/*"],
-      "js": ["script.js"],
+      "matches": ["<all_urls>"],
+      "js": ["background.js"],
       "run_at": "document_end"
     }
   ]
